@@ -474,8 +474,6 @@ header a:hover{
 .about{
     position: relative;
     padding-top: 2em;
-    display: flex;
-    justify-content: space-between;
     background-color: #081c29;
     width: 100%;
     height: 90vh;
@@ -485,10 +483,66 @@ header a:hover{
 .about-container{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:100px;
+    padding: 1em 2em;
 }
+
 
 .about-image{
     position: relative;
-    width: 5;
+    width: 470px;
+    height: 470px;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(#00eeff,#bc14ff,#00eeff,#bc14ff);
+    box-shadow: 0px 0px 30px #00eeff,0px 0px 30px#bc14ff,0px 0px 30px#00eeff,0px 0px 30px#bc14ff;
+    animation: up-down 1.5s ease infinite;
+    transition: .3s ease-in;
+}
+
+.about-img{
+    border-radius: 50%;
+}
+
+.about-content{
+    position: relative;
+    width: 50%;
+}
+
+.about-heading{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+.about-role{
+    margin-bottom: 1em;
+}
+
+.about-para{
+    font-size: 1.3em;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+
+/* about animations */
+
+@keyframes up-down {
+    0%{
+        transform: translateY(-20px)
+    }
+    50%{
+        transform: translateY(20px)
+    }
+    100%{
+        transform: translateY(-20px)
+    }
+
 }

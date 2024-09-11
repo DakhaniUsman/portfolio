@@ -13,7 +13,7 @@ document.addEventListener('scroll', () => {
 // automatic typing
 
 var typed = new Typed(".text" , {
-    strings :["FrontEnd Developer" , "Web Developer", "Testor"],
+    strings :["Front End Developer" , "Web Developer", "Testor"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
