@@ -1,0 +1,39 @@
+@media (max-width:800px){
+    .home .container{
+        /* display: block; */
+        flex-direction: column-reverse;
+        top: 2.5em;
+    }
+
+    .home-img{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+    .profile{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        /* background-color: #000; */
+        opacity: 0;
+        animation: appear 1s forwards;
+        animation-delay: 1s;
+    }
+
+    .profile-pic{
+        position: absolute;
+        border-radius: 50%;
+        background-color: aliceblue;
+        z-index: 1;
+        background-image: url('/assets/img/');
+        width: 300px;
+        height: 300px;
+    }
+
+}
