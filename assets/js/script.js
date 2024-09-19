@@ -12,6 +12,7 @@ function HideSidebar() {
 }
 
 function hide() {
+    const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'none';
 }
 
