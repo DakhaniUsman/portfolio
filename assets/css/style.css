@@ -29,7 +29,99 @@ h3{
     letter-spacing: 2px;
 }
 
+.mobile{
+    display: none;
+}
 
+@media (max-width:400px){
+    .main{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .image{
+        width: 70%;
+        height: 80%;
+        /* padding: 10px; */
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #00eeff,0px 0px 25px #00eeff,0px 0px 50px #00eeff,0px 0px 100px #00eeff;
+        background-color: transparent;
+        margin-bottom: 1em;
+    }
+
+    .mob-dev-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .desc-container{
+        width: 50%;
+        font-size: 3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    div:nth-child(1){
+        animation: mobile-span-1 2s infinite;
+        transition: all .3s ease;
+    }
+
+    div:nth-child(2){
+        animation: mobile-span-1 2s infinite;
+    }
+
+    div:nth-child(3){
+        animation: mobile-span-1 2s infinite;
+    }
+
+    div:nth-child(4){
+        animation: mobile-span-1 2s infinite;
+    }
+
+    div:nth-child(5){
+        animation: mobile-span-1 2s infinite;
+    }
+
+    @keyframes mobile-span-1 {
+        0%{
+            transform: translateY(-5px)
+        }
+        50%{
+            transform: translateY(5px)
+        }
+        100%{
+            transform: translateY(-5px)
+        }
+    }
+
+    
+}
 
 /* header css */
 
