@@ -112,11 +112,11 @@
 
 
     h1{
-        font-size: 1.8em;
+        font-size: 1.2em;
     }
 
     h2{
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
     h3{
@@ -124,7 +124,7 @@
     }
 
     .home-content p{
-        font-size: 1em;
+        font-size: 0.9em;
         width: 100%;
         line-height: normal;
     }
