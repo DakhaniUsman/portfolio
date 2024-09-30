@@ -177,7 +177,7 @@ nav li:nth-child(1) {
 .container {
     position: relative;
     /* top: 2.7em; */
-    /* width: 100%; */
+    width: 100%;
     max-width: 1400px;
     /* border: 2px solid white; */
     margin: 0px auto;
