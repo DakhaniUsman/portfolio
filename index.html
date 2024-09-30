@@ -11,10 +11,11 @@
     <link rel="canonical" href="https://dakhaniusman.github.io/portfolio/">
     <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
     <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <!-- <link rel="preload" href="assets/css/home.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <link rel="preload" href="assets/css/responsiveness.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dakhaniusman.github.io/portfolio/">
@@ -27,7 +28,7 @@
 
 </head>
 <body>
-    <div class="mobile">
+    <!-- <div class="mobile">
         <div class="content">
             <div class="image">
                 <img src="./assets/img/development/mob-dev.gif" alt="mobile development" class="mob-dev-img">
@@ -43,7 +44,7 @@
                 <p>Looks like this website is under development</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="main">
 
@@ -71,117 +72,133 @@
         </nav>
     </header>
 
-    <!-- home section -->
+    <div class="main-body">
+            <!-- home section -->
      <section class="home" id="home">
-            <div class="container">
-                <div class="home-content">
-                    <h2>Hello, It's Me</h2>
-                    <h1>Dakhani Usman</h1>
-                    <h3>And I am a <span class="text"></span></h3>
-                    <p>I'm a front-end developer passionate about crafting stunning, user-friendly websites. I bring ideas to life with clean, responsive designs that work seamlessly across devices. Beyond coding, I love collaborating with teams to create high-performing digital experiences and push the boundaries of web development.</p>
-                    <div class="social">
-                        <a href="" style="--i:6"><i class='bx bxl-linkedin'></i></a>
-                        <a href="" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                        <a href="" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                        <a href="" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
-                    </div>
-                    <div class="home-btns">
-                        <button class="btn">
-                            <a href="assets/dakhani-usman-cv.pdf" download="dakhani-usman-cv" >Download CV</a>
-                        </button>
-                        <button class="btn">
-                            <a href="https://github.com/DakhaniUsman" target="_blank">Github</a>
-                        </button>
-                    </div>
+        <div class="container">
+            <div class="home-content">
+                <h2>Hello, It's Me</h2>
+                <h1>Dakhani Usman</h1>
+                <h3>And I am a <span class="text"></span></h3>
+                <p>I'm a front-end developer passionate about creating stunning, responsive websites. I bring ideas to life with clean designs that work seamlessly across devices. I thrive on collaborating with teams to deliver high-performing digital experiences..</p>
+                <div class="social">
+                    <a href="" style="--i:6"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                    <a href="" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                    <a href="" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
                 </div>
-                <div class="home-img">
-                    <div class="profile">
-                        <img src="assets/img/personal/resources/kirito.png" alt="" class="profile-pic">
-                        <div class="circle-1"></div>
-                        <div class="circle-2"></div>
-                    </div>
+                <div class="home-btns">
+                    <button class="btn">
+                        <a href="assets/dakhani-usman-cv.pdf" download="dakhani-usman-cv" >Download CV</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://github.com/DakhaniUsman" target="_blank">Github</a>
+                    </button>
                 </div>
             </div>
-     </section>
 
-    <!-- about section -->
-     <section class="about" id="about">
-        <h2 class="about-heading">About <span style="color: #00eeff;">Me</span></h2>
-
-
-         <div class="about-container">
-            <div class="about-image">
-                <img src="assets/img/personal/resources/about-kirito.png" alt="about-img" class="about-img" width="450px" height="450px" >
+            <div class="home-img">
+                <div class="home-img-container">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <img src="assets/img/personal/resources/kirito.png" alt="" class="profile-pic">
+                </div>
             </div>
-            <div class="about-content">
 
-                <h3 class="about-role">Front End Developer</h3>
-                <p class="about-para">
-                    As a passionate Front-End Developer, I bring deep expertise in core technologies such as <span style="color: #00eeff;">HTML</span>, <span style="color: #00eeff;">CSS</span>, and <span style="color: #00eeff;">JavaScript</span>, paired with hands-on experience through various personal projects. My enthusiasm for coding drives me to continuously explore and master these fundamental tools, allowing me to create dynamic and visually engaging websites that deliver exceptional user experiences.
-                </p>
+            <!-- <div class="home-img">
+                <div class="home-img-container">
+                    <div class="circle-1">
+                        <div class="circle-2">
+                            <div class="profile">
+                                <img src="./assets/img/personal/resources/kirito.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+ </section>
 
-                <p class="about-para">
-                    In addition to my core skills, I am well-versed in front-end frameworks like <span style="color: #00eeff;">Bootstrap</span> and <span style="color: #00eeff;">React.js</span>, which enable me to build responsive and interactive web applications with ease. My proficiency with <span style="color: #00eeff;">Git</span> and <span style="color: #00eeff;">GitHub</span> further supports my development process, ensuring efficient version control and collaboration. I also have valuable experience as a <span style="color: #00eeff;">tester</span>, enhancing my ability to deliver high-quality and bug-free solutions.
-                </p>
+<!-- about section -->
+ <section class="about" id="about">
+    <h2 class="about-heading">About <span style="color: #00eeff;">Me</span></h2>
 
-                <p class="about-para">
-                    Through internships and specialized courses, I have honed my skills with practical, hands-on projects that have enriched my knowledge and expertise. Currently, I am working towards becoming a full-stack developer, expanding my capabilities to build comprehensive web solutions from the ground up. My commitment to excellence and continuous learning fuels my passion for development, as I strive to turn creative visions into reality and contribute to the ever-evolving digital landscape.
-                </p>
+
+     <div class="about-container">
+        <div class="about-image">
+            <img src="assets/img/personal/resources/about-kirito.png" alt="about-img" class="about-img" width="450px" height="450px" >
+        </div>
+        <div class="about-content">
+
+            <h3 class="about-role">Front End Developer</h3>
+            <p class="about-para">
+                As a passionate Front-End Developer, I excel in core technologies like <span style="color: #00eeff;">HTML</span>, <span style="color: #00eeff;">CSS</span>, and <span style="color: #00eeff;">JavaScript</span>, with hands-on experience from personal projects. My love for coding pushes me to continually refine these skills, creating dynamic and visually engaging websites with exceptional user experiences.
+            </p>
+
+            <p class="about-para">
+                In addition to my core skills, I am proficient in <span style="color: #00eeff;">Bootstrap</span> and <span style="color: #00eeff;">React.js</span>, enabling me to build responsive, interactive web apps. My expertise with <span style="color: #00eeff;">Git</span> and <span style="color: #00eeff;">GitHub</span> ensures smooth version control and collaboration. I also bring experience as a <span style="color: #00eeff;">tester</span>, helping me deliver high-quality, bug-free solutions.
+            </p>
+
+            <p class="about-para">
+                I have honed my skills through internships and hands-on projects, expanding my expertise. Currently, I'm working towards becoming a full-stack developer to build comprehensive web solutions. My passion for development drives me to turn creative visions into reality while contributing to the evolving digital landscape.
+            </p>
+        </div>
+    </div>
+ </section>
+
+ <!-- projects section -->
+ <section class="projects">
+    <h2 class="about-heading">My <span style="color: #00eeff;">Services</span></h2>
+
+    <div class="project-container">
+        <div class="project">
+            <div class="project-img">
+                <img src="https://assets.zyrosite.com/Aq20eV79zLfpXV6b/bb375cdd655184ca2715ac5059e73651-YX4ZEeZEvbhrMMZa.gif" alt="" class="project-img">
+            </div>
+            <div class="project-desc">
+                <i class='bx bx-code-alt' style='color:#00eeff'  ></i>
+                <h3>Website Design and Development</h3>
+                <p>Transforming ideas into stunning, responsive websites that deliver seamless user experiences and drive business growth</p>
+                <button class="btn">
+                    <a href="https://github.com/DakhaniUsman" target="_blank">Contact</a>
+                </button>
+
             </div>
         </div>
-     </section>
 
-     <!-- projects section -->
-     <section class="projects">
-        <h2 class="about-heading">My <span style="color: #00eeff;">Services</span></h2>
-
-        <div class="project-container">
-            <div class="project">
-                <div class="project-img">
-                    <img src="https://assets.zyrosite.com/Aq20eV79zLfpXV6b/bb375cdd655184ca2715ac5059e73651-YX4ZEeZEvbhrMMZa.gif" alt="" class="project-img">
-                </div>
-                <div class="project-desc">
-                    <i class='bx bx-code-alt' style='color:#00eeff'  ></i>
-                    <h3>Website Design and Development</h3>
-                    <p>Transforming ideas into stunning, responsive websites that deliver seamless user experiences and drive business growth</p>
-                    <button class="btn">
-                        <a href="https://github.com/DakhaniUsman" target="_blank">Contact</a>
-                    </button>
-
-                </div>
+        <div class="project">
+            <div class="project-img">
+                <img src="https://cssanimation.rocks/css-animation-101/images/course-min.gif" alt="" class="project-img">
             </div>
+            <div class="project-desc">
+                <i class='bx bx-camera-movie' style='color:#00eeff' ></i>
+                <h3>Web Animations and Interactivity</h3>
+                <p>Bringing your website to life with engaging animations and interactive elements for a dynamic and immersive user experience</p>
+                <button class="btn">
+                    <a href="https://github.com/DakhaniUsman" target="_blank">Contact</a>
+                </button>
 
-            <div class="project">
-                <div class="project-img">
-                    <img src="https://cssanimation.rocks/css-animation-101/images/course-min.gif" alt="" class="project-img">
-                </div>
-                <div class="project-desc">
-                    <i class='bx bx-camera-movie' style='color:#00eeff' ></i>
-                    <h3>Web Animations and Interactivity</h3>
-                    <p>Bringing your website to life with engaging animations and interactive elements for a dynamic and immersive user experience</p>
-                    <button class="btn">
-                        <a href="https://github.com/DakhaniUsman" target="_blank">Contact</a>
-                    </button>
-
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-img">
-                    <img src="https://dbaasltd.co.in/img/uiux.gif" alt="" class="project-img">
-                </div>
-                <div class="project-desc">
-                    <i class='bx bxl-apple' style="color: #00eeff;"></i>
-                    <h3>UI/UX Design and Prototyping</h3>
-                    <p>Crafting intuitive UI/UX designs and interactive prototypes that prioritize user experience and streamline your digital vision</p>
-                    <button class="btn">
-                        <a href="https://github.com/DakhaniUsman" target="_blank">Contact</a>
-                    </button>
-
-                </div>
             </div>
         </div>
-     </section>
+
+        <div class="project">
+            <div class="project-img">
+                <img src="https://dbaasltd.co.in/img/uiux.gif" alt="" class="project-img">
+            </div>
+            <div class="project-desc">
+                <i class='bx bxl-apple' style="color: #00eeff;"></i>
+                <h3>UI/UX Design and Prototyping</h3>
+                <p>Crafting intuitive UI/UX designs and interactive prototypes that prioritize user experience and streamline your digital vision</p>
+                <button class="btn">
+                    <a href="https://github.com/DakhaniUsman" target="_blank">Contact</a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+ </section>
+    </div>
+
     </div>
 
 
