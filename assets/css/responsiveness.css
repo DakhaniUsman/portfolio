@@ -130,6 +130,13 @@
         line-height: normal;
     }
 
+    .social a{
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+    
+
     .home-img-container{
         width: 300px;
         height: 300px;
