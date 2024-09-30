@@ -214,7 +214,7 @@ nav li:nth-child(1) {
 
 .home-content h3 {
     margin-bottom: 1em;
-    width: 80%;
+    /* width: 80%; */
     opacity: 0;
     animation: slide-up 1s ease forwards;
     animation-delay: .7s;
