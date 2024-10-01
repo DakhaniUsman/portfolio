@@ -449,21 +449,37 @@ nav li:nth-child(1) {
     padding-top: 5em;
     background-color: #081c29;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 .about-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 600px;
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
-    gap: 50px;
+}
+
+.about-main-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 }
 
 .about-image {
     position: relative;
+    /* width: 50%; */
     width: 470px;
     height: 470px;
     padding: 20px;
@@ -493,7 +509,7 @@ nav li:nth-child(1) {
 .about-heading {
     text-align: center;
     font-size: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .about-role {
@@ -534,65 +550,80 @@ nav li:nth-child(1) {
 
 /* project section */
 
-.projects {
+.services {
     position: relative;
     width: 100%;
-    height: 100%;
-    padding: 3em 10%;
-    margin-top: 5em;
-}
-
-.project-container {
-    display: grid;
-    gap: 5% 10%;
-    grid-template-columns: auto auto auto;
-    width: 100%;
+    height: 100vh;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@media (max-width:1200px) {
-    .project-container {
-        display: grid;
-        grid-template-columns: auto;
-    }
+.service-container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: 700px;
+    /* border: 2px solid; */
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
 }
 
-.project {
+.service {
     position: relative;
-    min-width: 300px;
-    max-width: 420px;
-    height: max-content;
+    min-width: 350px;
+    max-width: 350px;
+    height: 500px;
     background-color: black;
-    padding-top: 5em;
-    padding: 1.5em;
+    /* padding-top: 5em; */
+    padding: 1em;
     border-radius: 10px;
     /* background: transparent; */
 }
 
-.project-img{
-    width: 100%;
-    height: 100%;
+
+
+
+.service-heading{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
 }
 
+.service-img{
+    width: 300px;
+    height: 150px;
+}
+
+.service-desc{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
 }
 
-.project::after,
-.project::before {
+.service::after,
+.service::before {
     --angle: 0deg;
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 7px;
+    border-radius: 10px;
     top: 50%;
     left: 50%;
     z-index: -1;
-    padding: 10px;
+    padding: 7px;
     transform: translate(-50%, -50%);
     background-image: conic-gradient(from var(--angle), transparent 70%, #0ef);
     animation: 3s rotate linear infinite;
@@ -609,32 +640,29 @@ nav li:nth-child(1) {
     }
 }
 
-.project::before {
+.service::before {
     filter: blur(1.5rem);
 }
 
-.project-img {
+.service-img {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.project h3 {
+.service h3 {
     font-size: 1.7em;
     line-height: 1em;
     letter-spacing: 2px;
-    margin-bottom: 1em;
 }
 
 
-.project p {
+.service p {
     font-size: 1.3em;
     line-height: 1.1em;
     letter-spacing: 2px;
     text-align: left;
-    margin-bottom: 1em;
 }
 
-.project i {
+.service i {
     font-size: 2em;
-    margin-bottom: 1em;
 }
