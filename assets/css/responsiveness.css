@@ -206,7 +206,7 @@
 
     .service{
         /* min-width: 300px; */
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     .service p{
@@ -219,6 +219,7 @@
         font-size: 1.2em;
         line-height: normal;
     }
+
 
 
     .main-skills-container{
