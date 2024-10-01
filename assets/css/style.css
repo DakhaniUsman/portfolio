@@ -726,6 +726,8 @@ nav li:nth-child(1) {
 .technical-bars i{
     /* border: 1px solid white; */
     font-size: 40px;
+    animation: showText 1s linear forwards;
+    opacity: 0;
 }
 
 .technical-bars .bar .info{
