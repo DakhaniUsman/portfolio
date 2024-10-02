@@ -216,6 +216,17 @@
         line-height: normal;
     }
 
+    .projects h3{
+        font-size: 1.2em;
+    }
+
+    .projects p{
+        font-size: 0.9em;
+    }
+
+    .projects i{
+        font-size: 32px;
+    }
 
 
     .main-skills-container{
