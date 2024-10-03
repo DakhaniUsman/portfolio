@@ -56,11 +56,11 @@
     <header>
         <nav>
             <ul class="sidebar">
-                <li onclick=HideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=HideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li onclick=hide()><a href="#home">Home</a></li>
                 <li onclick=hide()><a href="#about">About</a></li>
                 <li onclick=hide()><a href="#skills">Skills</a></li>
-                <li onclick=hide()><a href="#projects">Projects</a></li>
+                <li onclick=hide()><a href="#portfolio">Portfolio</a></li>
                 <li onclick=hide()><a href="#contact">Contact</a></li>
             </ul>
             <ul>
@@ -68,9 +68,9 @@
                 <li class="hideOnMobile"><a href="#home" style="--i:1" class="active">Home</a></li>
                 <li class="hideOnMobile"><a href="#about" style="--i:2">About</a></li>
                 <li class="hideOnMobile"><a href="#skills" style="--i:3">Skills</a></li>
-                <li class="hideOnMobile"><a href="#projects" style="--i:4">Projects</a></li>
+                <li class="hideOnMobile"><a href="#portfolio" style="--i:4">Portfolio</a></li>
                 <li class="hideOnMobile"><a href="#contact" style="--i:5">Contact</a></li>
-                <li class="hideOnDesktop" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00eeff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="hideOnDesktop" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00eeff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
@@ -320,7 +320,7 @@
 </section>
 
 <!-- projects -->
- <section class="projects" id="projects">
+ <section class="projects" id="portfolio">
     <div class="projects-container">
         <h2 class="projects-heading">My <span style="color: #00eeff;">Projects</span></h2>
         <div class="projects-main-container">
@@ -331,12 +331,60 @@
                         <div class="card-up">
                             <h3>Netflix Clone</h3>
                             <p>Netflix like front-end created through pure HTML & CSS</p>
-                            <a href="https://dakhaniusman.github.io/OTT_HTML_NETFLIX/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                            <a href="https://dakhaniusman.github.io/OTT_HTML_NETFLIX/" target="_blank"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
                         </div>
-                        
+
                     </div>
                     <!-- <div class="card-bottom"></div> -->
                 </div>
+                <div class="project-card">
+                    <div class="card-main">
+                        <img src="./assets/img/projects/spotify.webp" alt="">
+                        <div class="card-up">
+                            <h3>Spotify Clone</h3>
+                            <p>Spotify like front-end created through pure HTML & CSS</p>
+                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+
+                    </div>
+                    <!-- <div class="card-bottom"></div> -->
+                </div>
+                <div class="project-card">
+                    <div class="card-main">
+                        <img src="./assets/img/projects/foodies.png" alt="">
+                        <div class="card-up">
+                            <h3>Foodies</h3>
+                            <p>Food and Restraunt website made using bootstrap5</p>
+                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-main">
+                        <img src="./assets/img/projects/travel.avif" alt="">
+                        <div class="card-up">
+                            <h3>Travelling Website</h3>
+                            <p>To Travel is To Live.
+                            </p>
+                            <a href="#"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-main">
+                        <img src="./assets/img/projects/calculator.jpg" alt="">
+                        <div class="card-up">
+                            <h3>Calculator Web-App</h3>
+                            <p>Fully functional calculator created through HTML CSS & JS</p>
+                            <a href="https://dakhaniusman.github.io/calculator/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <div class="card-main">
                         <img src="./assets/img/projects/typing-speed.b4857e9c-a58e-4abf-abf1-487c4e25f60f" alt="">
@@ -348,55 +396,79 @@
 
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="card-main">
-                        <img src="./assets/img/projects/calculator.jpg" alt="">
-                        <div class="card-up">
-                            <h3>Calculator Web-App</h3>
-                            <p>Fully functional calculator throught HTML CSS & JS</p>
-                            <a href="https://dakhaniusman.github.io/calculator/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>   
-                        </div>
 
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-main">
-                        <img src="./assets/img/projects/netflix-clone.jpg" alt="">
-                        <div class="card-up">
-                            <h3>Netflix Clone</h3>
-                            <p>Netflix like front-end created through pure HTML & CSS</p>
-                            <a href="https://dakhaniusman.github.io/OTT_HTML_NETFLIX/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                        </div>
-                        
-                    </div>
-                    <!-- <div class="card-bottom"></div> -->
-                </div>
-                <div class="project-card">
-                    <div class="card-main">
-                        <img src="./assets/img/projects/typing-speed.b4857e9c-a58e-4abf-abf1-487c4e25f60f" alt="">
-                        <div class="card-up">
-                            <h3>Typing Speed Master</h3>
-                            <p>Web app to check typing speed developed through advance JS</p>
-                            <a href="https://dakhaniusman.github.io/TypingMaster_with_Usman/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-main">
-                        <img src="./assets/img/projects/calculator.jpg" alt="">
-                        <div class="card-up">
-                            <h3>Calculator Web-App</h3>
-                            <p>Fully functional calculator throught HTML CSS & JS</p>
-                            <a href="https://dakhaniusman.github.io/calculator/"><i class="bx bx-link-external" style="color: aliceblue;"></i></a>   
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>
  </section>
+
+ <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+        <h2 class="contact-heading">Contact <span style="color: #0ef;">Me</span></h2>
+        <div class="contact-main-container">
+            <div class="contact-left">
+                <div class="contact-desc">
+                    <h3 class="contact-sub-heading">Let's work together</h3>
+                    <p class="contact-sub-desc">Ready to bring your ideas to life with stunning, responsive websites? As a front-end developer, I specialize in turning visions into beautiful, functional web experiences. Let's collaborate and build something amazing together—get in touch today!</p>
+                </div>
+                <div class="contact-list">
+                    <div class="phone">
+                        <i class='bx bxs-phone-call' style='color:#00eeff'  ></i>
+                        <a href="tel:+919326219059">+91 9326219059</a>
+                    </div>
+                    <div class="email">
+                        <i class='bx bxl-gmail' style='color:#00eeff' ></i>
+                        <a href="mailto:dakhaniusman@gmail.com">dakhaniusman@gmail.com</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="" style="--i:6"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                    <a href="" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                    <a href="" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="form-container">
+                    <form action="" class="contact-form">
+                        <div class="form-details">
+                            <div class="name">
+                                <input type="text" name="name" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="email">
+                                <input type="email" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="number">
+                                <input type="text" name="number" id="number" placeholder="Enter your contact number">
+                            </div>
+                            <div class="subject">
+                                <input type="text" name="subject" id="subject" placeholder="Enter your subject">
+                            </div>
+                        </div>
+                        <div class="form-message">
+                            <div class="message">
+                                <textarea name="message" id="message" placeholder="Enter your message" rows="5" cols="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <div class="submit-btn">
+                                <button class="btn" type="submit" value="submit">
+                                    <span>Submit</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+  <footer>
+    
+  </footer>
 
     </div>
 

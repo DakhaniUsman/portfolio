@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0px 10%;
+  overflow: hidden;
 }
 
 h1 {
@@ -555,7 +556,7 @@ nav li:nth-child(1) {
 
 .service {
   position: relative;
-  min-width: 350px;
+  min-width: 320px;
   max-width: 350px;
   height: 500px;
   background-color: black;
@@ -949,6 +950,7 @@ nav li:nth-child(1) {
 
 .projects-container {
   width: 100%;
+  max-width: 1500px;
   height: 100%;
   /* border: 2px solid red; */
   display: flex;
@@ -967,6 +969,7 @@ nav li:nth-child(1) {
   position: relative;
   width: 100%;
   height: 100%;
+  max-width: 1500px;
   /* border: 2px solid white; */
   display: flex;
   justify-content: center;
@@ -976,12 +979,13 @@ nav li:nth-child(1) {
 .projects-cards {
   position: relative;
   width: 100%;
+  max-width: 1500px;
   /* height: ; */
   /* border: 2px solid green; */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 70px;
   flex-wrap: wrap;
 
 }
@@ -996,7 +1000,7 @@ nav li:nth-child(1) {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0px 0px 10px #0ef;
+  box-shadow: 0px 0px 20px #0ef;
   flex-wrap: wrap;
   padding: 5px ;
   /* z-index: 10; */
@@ -1006,8 +1010,8 @@ nav li:nth-child(1) {
   content: "";
   position: absolute;
   width: 100px;
-  height: 200%;
-  background:linear-gradient(#0ef,#bc13fe);
+  height: 180%;
+  background:linear-gradient(#0ef,#0ef);
   animation: project-animation 4s linear infinite;
   z-index: -1;
 }
@@ -1047,7 +1051,7 @@ nav li:nth-child(1) {
   justify-content: space-evenly;
   align-items: center;
   padding: 1em;
-  background: linear-gradient(transparent,#0ef);
+  background: linear-gradient(transparent 25%,#0ef);
   text-align: center;
   /* background: transparent; */
   opacity: 0;
@@ -1056,14 +1060,14 @@ nav li:nth-child(1) {
 .card-up h3{
   color: black;
   font-size: 1.7em;
-  text-shadow: 0px 0px 5px white;
+  text-shadow: 0px 0px 10px white;
 }
 
 .card-up p{
   color: #000;
   font-weight: 600;
   font-size: 1.1em;
-  text-shadow: 0px 0px 5px  white
+  text-shadow: 0px 0px 10px  white
 }
 
 .card-up a{
@@ -1075,7 +1079,7 @@ nav li:nth-child(1) {
   align-items: center;
   text-decoration: none;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px white  inset; 
+  box-shadow: 0px 0px 10px white  inset;
   background-color: black;
 }
 
@@ -1105,5 +1109,241 @@ nav li:nth-child(1) {
   }
 }
 
+/* contact section */
 
+.contact{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  max-width: 1500px;
+  /* padding-top: 5em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid white; */
+  /* flex-wrap: wrap; */
+}
 
+.contact-container{
+  width: 100%;
+  height: 600px;
+}
+
+.contact-heading{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.contact-main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact-left{
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+
+}
+
+.contact-desc{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-sub-heading{
+  font-size: 2.2em;
+}
+
+.contact-sub-desc{
+  font-size: 1.1em;
+  line-height: 2em;
+  letter-spacing: 2px;
+  width: 80%;
+}
+
+.contact-list{
+  width: 80%;
+  height: 15%;
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+
+.phone{
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone i{
+  font-size: 36px;
+}
+
+.phone a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.email{
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+
+.email i{
+  font-size: 36px;
+}
+
+.email a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.contact-right{
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 5px solid black; */
+  /* background-color: #00eeff; */
+  box-shadow: 0px 0px 10px #000 ;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.form-details{
+  width: 100%;
+  height: 30%;
+  /* border: 2px solid red; */
+  display: grid;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* padding: 1em; */
+  gap: 1rem;
+  grid-template-columns: auto auto;
+}
+
+.form-details > div{
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.form-details input{
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #00eeff;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+}
+
+.form-details input::placeholder{
+  color: #0ef;
+  font-size: 1em;
+}
+
+.form-message{
+  width: 100%;
+  height: 30%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-message .message{
+  width: 100%;
+  height: 80%;
+  /* border: 2px solid red; */
+}
+
+.form-message .message textarea{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #00eeff;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  resize: none;
+}
+
+.form-message textarea::placeholder{
+  color: #0ef;
+  font-size: 1em;
+}
+
+.form-submit{
+  width: 100%;
+}
+
+.form-submit .btn {
+  width: 100%;
+  color: black;
+  font-size: 1.3em;
+  text-decoration: none;
+  box-shadow: 0 0 5px #00eeff, 0 0 25px #00eeff;
+}
+
+.form-submit .btn:hover {
+  box-shadow: 0px 0px 5px #00eeff, 0px 0px 25px #00eeff, 0px 0px 50px #00eeff,
+    0px 0px 100px #00eeff;
+  transition: 0.3s ease-in;
+}
