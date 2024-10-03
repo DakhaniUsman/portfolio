@@ -173,7 +173,7 @@ nav li:nth-child(1) {
 }
 
 @media (min-width: 800px) {
-  .hideOnDesktop {
+  .mobile-menu-icon {
     display: none;
   }
 }
