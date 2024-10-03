@@ -313,6 +313,21 @@
     }
 
 
+    .footer-top{
+        height: 30%;
+    }
+
+    .footer-nav ul{
+        gap: 20px;
+    }
+
+    .footer-text{
+        flex-direction: column;
+    }
+
+    .footer-text p:nth-child(1){
+        border-right: 0px;
+    }
 
 }
 
