@@ -514,7 +514,6 @@ nav li:nth-child(1) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 .about-container {
