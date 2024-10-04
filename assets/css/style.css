@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Foldit:wght@100..900&family=Hind:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Nova+Square&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ramaraja&family=Teko:wght@300..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +8,16 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "calibri","Times New Roman", Times, serif; */
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   background-color: #081c29;
   color: white;
+}
+
+*::selection{
+  color: black;
+  background: white;
 }
 
 .main-body {
@@ -20,7 +28,16 @@ body {
 }
 
 h1 {
+  /* border: 2px solid black; */
+  width: max-content;
   font-size: 3.5em;
+  background: url(https://wallpapers.com/images/featured/multicolor-background-e9f6dq3ohfw1ybud.jpg) 50% 50%;
+  background-size:cover ;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -527,7 +544,13 @@ nav li:nth-child(1) {
 
 .about-role {
   font-size: 2em;
+  width: max-content;
   margin-bottom: 1em;
+  background: url(https://wallpapers.com/images/featured/multicolor-background-e9f6dq3ohfw1ybud.jpg) 50% 50%;
+  background-size:cover ;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-para {
@@ -586,7 +609,9 @@ nav li:nth-child(1) {
   min-width: 320px;
   max-width: 350px;
   height: 500px;
-  background-color: black;
+  background-color: #000;
+  box-shadow: 0px 0px 10px #aaa inset;
+  /* background: linear-gradient(45deg,#000 40%,#aaa,#000); */
   /* padding-top: 5em; */
   padding: 1em;
   border-radius: 10px;
@@ -632,7 +657,7 @@ nav li:nth-child(1) {
   padding: 7px;
   transform: translate(-50%, -50%);
   background-image: conic-gradient(from var(--angle), transparent 70%, #0ef);
-  animation: 3s rotate linear infinite;
+  animation: 5s rotate linear infinite;
 }
 
 @keyframes rotate {
@@ -793,7 +818,7 @@ nav li:nth-child(1) {
   color: #fff;
   font-size: 12px;
   border-radius: 3px;
-  top: -28px;
+  top: 21px;
   right: -20px;
   animation: showText 0.5s 1.5s linear forwards;
   opacity: 0;
@@ -821,10 +846,10 @@ nav li:nth-child(1) {
   width: 0;
   height: 0;
   border: 7px solid transparent;
-  border-bottom-width: 0px;
+  border-top-width: 0px;
   border-right-width: 0px;
-  border-top-color: #000;
-  top: -10px;
+  border-bottom-color: #0ef;
+  top: 10px;
   right: 0;
   animation: showText 0.5s 1.5s linear forwards;
   opacity: 0;
@@ -849,7 +874,7 @@ nav li:nth-child(1) {
 .radial-bars .radial-bar {
   width: 50%;
   height: 170px;
-  margin-bottom: 10xp;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -880,6 +905,7 @@ nav li:nth-child(1) {
 
 .path {
   stroke-width: 10;
+  opacity: 0;
   stroke: #00eeff;
   fill: transparent;
   stroke-dasharray: 502;
@@ -908,31 +934,37 @@ nav li:nth-child(1) {
 
 @keyframes animate-path1 {
   100% {
+    opacity: 1;
     stroke-dashoffset: 30;
   }
 }
 @keyframes animate-path2 {
   100% {
+    opacity: 1;
     stroke-dashoffset: 30;
   }
 }
 @keyframes animate-path3 {
   100% {
+    opacity: 1;
     stroke-dashoffset: 50;
   }
 }
 @keyframes animate-path4 {
   100% {
+    opacity: 1;
     stroke-dashoffset: 50;
   }
 }
 @keyframes animate-path5 {
   100% {
+    opacity: 1;
     stroke-dashoffset: 50;
   }
 }
 @keyframes animate-path6 {
   100% {
+    opacity: 1;
     stroke-dashoffset: 50;
   }
 }
@@ -1085,16 +1117,16 @@ nav li:nth-child(1) {
 }
 
 .card-up h3{
-  color: black;
+  color: red;
   font-size: 1.7em;
-  text-shadow: 0px 0px 10px white;
+  text-shadow: 0px 0px 10px black;
 }
 
 .card-up p{
-  color: #000;
+  color: #fff;
   font-weight: 600;
   font-size: 1.1em;
-  text-shadow: 0px 0px 10px  white
+  text-shadow: 0px 0px 10px  black;
 }
 
 .card-up a{
