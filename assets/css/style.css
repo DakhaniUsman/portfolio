@@ -799,7 +799,7 @@ nav li:nth-child(1) {
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
   font-size: 1.3em;
 }
 
