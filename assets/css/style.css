@@ -264,20 +264,32 @@ nav li:nth-child(1) {
 
 .home-content h1 {
   margin-bottom: 0.2em;
+
+}
+
+.home.show .home-content h1{
   opacity: 0;
   animation: slide-right 1s ease forwards;
-  animation-delay: 0.5s;
+  animation-delay: .5s;
 }
 
 .home-content h2 {
   margin-bottom: 0.2em;
+
+}
+
+.home.show .home-content h2{
   opacity: 0;
   animation: slide-down 1s ease forwards;
+  animation-delay: .5s;
 }
 
 .home-content h3 {
   margin-bottom: 1em;
   /* width: 80%; */
+}
+
+.home.show .home-content h3{
   opacity: 0;
   animation: slide-up 1s ease forwards;
   animation-delay: 0.7s;
@@ -286,6 +298,9 @@ nav li:nth-child(1) {
 .home-content p {
   margin-bottom: 1em;
   width: 80%;
+}
+
+.home.show .home-content p{
   opacity: 0;
   animation: slide-left 1s ease forwards;
   animation-delay: 0.9s;
@@ -317,11 +332,14 @@ nav li:nth-child(1) {
   color: #00eeff;
   border: 1px solid #00eeff;
   font-size: 1.5em;
+  /* background-color: black; */
+}
+
+.home.show .social a{
   opacity: 0;
   animation: slide-left 1s forwards;
   animation-delay: calc(0.2s * var(--i));
   transition: 0.5s ease-in;
-  /* background-color: black; */
 }
 
 .social a:hover {
@@ -343,6 +361,9 @@ nav li:nth-child(1) {
   background-color: #00eeff;
   margin-right: 1em;
   border: none;
+}
+
+.home.show .btn{
   opacity: 0;
   animation: appear 1s forwards;
   animation-delay: 1s;
@@ -376,6 +397,10 @@ nav li:nth-child(1) {
   display: flex;
   justify-content: right;
   align-items: center;
+
+}
+
+.home.show .home-img{
   animation: appear 2s ease-in;
 }
 
@@ -586,10 +611,14 @@ nav li:nth-child(1) {
   letter-spacing: 2px;
   margin-bottom: 1em;
   opacity: 0;
+}
+
+.about.show .about-para{
   animation: slide-up 1s ease forwards;
   transition: 0.5s ease-in;
   animation-delay: calc(0.5s * var(--a));
 }
+
 
 /* about animations */
 
@@ -785,6 +814,9 @@ nav li:nth-child(1) {
 .technical-bars i {
   /* border: 1px solid white; */
   font-size: 40px;
+}
+
+.skills.show .technical-bars i{
   animation: showText 1s linear forwards;
   opacity: 0;
 }
@@ -796,9 +828,13 @@ nav li:nth-child(1) {
 .technical-bars .bar .info span {
   font-size: 1em;
   font-weight: 500px;
+}
+
+.skills.show .technical-bars .bar .info span{
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
+
 
 .technical-bars .bar .progress-line {
   position: relative;
@@ -806,7 +842,11 @@ nav li:nth-child(1) {
   width: 100%;
   height: 5px;
   background-color: #000;
+}
+
+.skills.show .technical-bars .bar .progress-line{
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation-delay: .5s;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -822,7 +862,12 @@ nav li:nth-child(1) {
   background-color: #0ef;
   position: absolute;
   border-radius: 10px;
+
+}
+
+.skills.show .container-1.show .technical-bars .bar .progress-line span{
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation-delay: .5s;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -927,7 +972,11 @@ nav li:nth-child(1) {
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
   stroke-linecap: round;
+}
+
+.skills.show .container-1.show .radial-bars .radial-bar .progress-bar {
   animation: animate-bar 1s linear forwards;
+
 }
 
 @keyframes animate-bar {
@@ -946,22 +995,22 @@ nav li:nth-child(1) {
   stroke-linecap: round;
 }
 
-.path-1 {
+.skills.show .container-1.show .path-1 {
   animation: animate-path1 1s 1s linear forwards;
 }
-.path-2 {
+.skills.show .container-1.show .path-2 {
   animation: animate-path2 1s 1s linear forwards;
 }
-.path-3 {
+.skills.show .container-1.show .path-3 {
   animation: animate-path3 1s 1s linear forwards;
 }
-.path-4 {
+.skills.show .container-1.show .path-4 {
   animation: animate-path4 1s 1s linear forwards;
 }
-.path-5 {
+.skills.show .container-1.show .path-5 {
   animation: animate-path5 1s 1s linear forwards;
 }
-.path-6 {
+.skills.show .container-1.show .path-6 {
   animation: animate-path6 1s 1s linear forwards;
 }
 
@@ -1345,6 +1394,18 @@ nav li:nth-child(1) {
   color: white;
   font-size: 1.1em;
 }
+
+.contact .social a{
+  opacity: 0;
+
+}
+
+.contact.show .social a{
+  animation: slide-left 1s forwards;
+  animation-delay: calc(0.2s * var(--i));
+  transition: 0.5s ease-in;
+}
+
 
 .contact-right{
   width: 50%;
