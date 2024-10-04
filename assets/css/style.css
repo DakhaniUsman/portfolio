@@ -41,6 +41,14 @@ body {
   transform: translateX(0);
 }
 
+.about.hidden{
+  transform: translateX(100%);
+}
+
+.about.show{
+  transform: translate(0);
+}
+
 
 
 h1 {
@@ -846,7 +854,7 @@ nav li:nth-child(1) {
 
 .skills.show .technical-bars .bar .progress-line{
   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  animation-delay: .5s;
+  /* animation-delay: .5s; */
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -865,9 +873,9 @@ nav li:nth-child(1) {
 
 }
 
-.skills.show .container-1.show .technical-bars .bar .progress-line span{
+.skills.show .technical-bars .bar .progress-line span{
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-  animation-delay: .5s;
+  animation-delay: 1s;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -929,8 +937,12 @@ nav li:nth-child(1) {
   border-bottom-color: #0ef;
   top: 10px;
   right: 0;
-  animation: showText 0.5s 1.5s linear forwards;
   opacity: 0;
+
+}
+
+.skills.show .progress-line span::before {
+  animation: showText 0.5s 1.5s linear forwards;
 }
 
 @keyframes showText {
@@ -976,6 +988,7 @@ nav li:nth-child(1) {
 
 .skills.show .container-1.show .radial-bars .radial-bar .progress-bar {
   animation: animate-bar 1s linear forwards;
+  /* animation-delay: 1s; */
 
 }
 
