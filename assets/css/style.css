@@ -38,9 +38,10 @@ body {
 .show{
   opacity: 1;
   filter: blur(0);
-  transform: translateX(0%);
-
+  transform: translateX(0);
 }
+
+
 
 h1 {
   /* border: 2px solid black; */
@@ -504,7 +505,8 @@ nav li:nth-child(1) {
   position: relative;
   margin-top: 5em;
   background-color: #081c29;
-  width: 100%;
+  width: 100vw;
+  max-width: 1500px;
   /* height: 100vh; */
   min-height: 100vh;
   color: white;
@@ -512,6 +514,7 @@ nav li:nth-child(1) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .about-container {
