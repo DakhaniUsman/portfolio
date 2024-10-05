@@ -42,11 +42,16 @@ body {
 }
 
 .about.hidden{
+  opacity: 0;
+  filter: blur(5px);
   transform: translateX(100%);
+  transition: all 1s ease;
 }
 
 .about.show{
-  transform: translate(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 
@@ -272,22 +277,22 @@ nav li:nth-child(1) {
 
 .home-content h1 {
   margin-bottom: 0.2em;
+  opacity: 0;
 
 }
 
 .home.show .home-content h1{
-  opacity: 0;
   animation: slide-right 1s ease forwards;
   animation-delay: .5s;
 }
 
 .home-content h2 {
   margin-bottom: 0.2em;
-
+  opacity: 0;
+ 
 }
 
 .home.show .home-content h2{
-  opacity: 0;
   animation: slide-down 1s ease forwards;
   animation-delay: .5s;
 }
@@ -295,10 +300,10 @@ nav li:nth-child(1) {
 .home-content h3 {
   margin-bottom: 1em;
   /* width: 80%; */
+  opacity: 0;
 }
 
 .home.show .home-content h3{
-  opacity: 0;
   animation: slide-up 1s ease forwards;
   animation-delay: 0.7s;
 }
@@ -306,10 +311,10 @@ nav li:nth-child(1) {
 .home-content p {
   margin-bottom: 1em;
   width: 80%;
+  opacity: 0;
 }
 
 .home.show .home-content p{
-  opacity: 0;
   animation: slide-left 1s ease forwards;
   animation-delay: 0.9s;
 }
@@ -341,10 +346,10 @@ nav li:nth-child(1) {
   border: 1px solid #00eeff;
   font-size: 1.5em;
   /* background-color: black; */
+  opacity: 0;
 }
 
 .home.show .social a{
-  opacity: 0;
   animation: slide-left 1s forwards;
   animation-delay: calc(0.2s * var(--i));
   transition: 0.5s ease-in;
@@ -369,10 +374,10 @@ nav li:nth-child(1) {
   background-color: #00eeff;
   margin-right: 1em;
   border: none;
+  opacity: 0;
 }
 
 .home.show .btn{
-  opacity: 0;
   animation: appear 1s forwards;
   animation-delay: 1s;
   transition: 0.3s ease-in;
@@ -405,7 +410,6 @@ nav li:nth-child(1) {
   display: flex;
   justify-content: right;
   align-items: center;
-
 }
 
 .home.show .home-img{
@@ -538,7 +542,7 @@ nav li:nth-child(1) {
   position: relative;
   margin-top: 5em;
   background-color: #081c29;
-  width: 100vw;
+  width: 100%;
   max-width: 1500px;
   /* height: 100vh; */
   min-height: 100vh;
@@ -581,6 +585,10 @@ nav li:nth-child(1) {
   background: linear-gradient(#00eeff, #bc14ff, #00eeff, #bc14ff);
   box-shadow: 0px 0px 30px #00eeff, 0px 0px 30px#bc14ff, 0px 0px 30px#00eeff,
     0px 0px 30px#bc14ff;
+  /* border: 2px solid black; */
+}
+
+.about.show .about-image{
   animation: appear 1.5s linear, up-down 1.5s ease infinite;
   transition: 0.3s ease-in;
 }
@@ -822,11 +830,11 @@ nav li:nth-child(1) {
 .technical-bars i {
   /* border: 1px solid white; */
   font-size: 40px;
+  opacity: 0;
 }
 
 .skills.show .technical-bars i{
   animation: showText 1s linear forwards;
-  opacity: 0;
 }
 
 .technical-bars .bar .info {
@@ -836,11 +844,11 @@ nav li:nth-child(1) {
 .technical-bars .bar .info span {
   font-size: 1em;
   font-weight: 500px;
+  opacity: 0;
 }
 
 .skills.show .technical-bars .bar .info span{
   animation: showText 0.5s 1s linear forwards;
-  opacity: 0;
 }
 
 
@@ -906,8 +914,12 @@ nav li:nth-child(1) {
   border-radius: 3px;
   top: 21px;
   right: -20px;
-  animation: showText 0.5s 1.5s linear forwards;
   opacity: 0;
+}
+
+.skills.show .progress-line span::after{
+  animation: showText 0.5s 1.5s linear forwards;
+
 }
 
 .progress-line.html span::after {
@@ -1341,7 +1353,6 @@ nav li:nth-child(1) {
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
-
 }
 
 .contact-desc{
@@ -1624,6 +1635,7 @@ footer{
 .footer-bottom .social a{
   color: #aaa;
   border: 1px solid #aaa;
+  opacity: 1; 
 }
 
 .footer-bottom .social a:hover{
