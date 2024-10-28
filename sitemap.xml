@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://dakhaniusman.github.io/portfolio/</loc>
+        <lastmod>2024-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://github.com/DakhaniUsman/portfolio/blob/main/assets/img/personal/resources/kirito.jpg?raw=true</image:loc>
+            <image:caption>profile-pic</image:caption>
+        </image:image>
+    </url>
+</urlset>
