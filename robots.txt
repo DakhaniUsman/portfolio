@@ -1,6 +1,7 @@
 # Allow all web crawlers access to everything
 User-agent: *
-Disallow:
+Allow: /sitemap.xml
+
 
 # Sitemap location
 Sitemap: https://dakhaniusman.github.io/portfolio/sitemap.xml
