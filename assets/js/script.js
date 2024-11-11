@@ -68,6 +68,10 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
             message: message
         }),
     })
-    .then(response => alert("Message sent!"))
+    .then(response => {
+        alert("Message sent!");
+        document.getElementById("contactForm").reset();
+
+    })
     .catch(error => alert("Error sending message."));
 });
