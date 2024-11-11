@@ -69,7 +69,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
         }),
     })
     .then(response => {
-        alert("Message sent!");
+        alert("Thank You your message has been received 😊!");
         document.getElementById("contactForm").reset();
 
     })
