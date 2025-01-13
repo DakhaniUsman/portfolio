@@ -624,6 +624,9 @@
         width: 100%;
     }
 
+    .contact{
+        margin-bottom: 20%;
+    }
 
     .contact-sub-heading{
         font-size: 1.5em;
@@ -659,7 +662,6 @@
 
     .contact-container{
         height: 600px;
-        margin-bottom: 2em;
     }
 
 }
