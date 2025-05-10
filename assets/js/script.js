@@ -32,7 +32,7 @@ document.addEventListener('scroll', () => {
 // automatic typing
 
 var typed = new Typed(".text", {
-    strings: ["Front End Developer", "Web Developer", "Testor"],
+    strings: ["Front End Developer", "Backend Developer", "MERN Stack Developer",],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

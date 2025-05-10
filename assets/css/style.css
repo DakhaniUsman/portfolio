@@ -903,13 +903,13 @@ nav li:nth-child(1) {
   width: 90%;
 }
 .progress-line.js span {
-  width: 30%;
+  width: 90%;
 }
 .progress-line.bootstrap span {
-  width: 30%;
+  width: 90%;
 }
 .progress-line.react span {
-  width: 10%;
+  width: 90%;
 }
 
 .progress-line span::after {
@@ -930,7 +930,7 @@ nav li:nth-child(1) {
 
 }
 
-.progress-line.html span::after {
+/* .progress-line.html span::after {
   content: "90%";
 }
 .progress-line.css span::after {
@@ -944,9 +944,9 @@ nav li:nth-child(1) {
 }
 .progress-line.react span::after {
   content: "10%";
-}
+} */
 
-.progress-line span::before {
+/* .progress-line span::before {
   content: "";
   position: absolute;
   width: 0;
@@ -959,7 +959,7 @@ nav li:nth-child(1) {
   right: 0;
   opacity: 0;
 
-}
+} */
 
 .skills.show .progress-line span::before {
   animation: showText 0.5s 1.5s linear forwards;
@@ -1247,12 +1247,14 @@ nav li:nth-child(1) {
 }
 
 .projects-cards .project-card:nth-child(1) .card-up h3{
+  color: blue;
+}
+
+
+.projects-cards .project-card:nth-child(2) .card-up h3{
   color: red;
 }
 
-.projects-cards .project-card:nth-child(2) .card-up h3{
-  color: green;
-}
 
 .projects-cards .project-card:nth-child(3) .card-up h3{
   color: tomato;
