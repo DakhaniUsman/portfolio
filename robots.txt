@@ -3,4 +3,4 @@ User-agent: *
 Disallow:
 
 # Sitemap location
-Sitemap: https://dakhaniusman.github.io/portfolio/sitemap.xml
+Sitemap: https://dakhaniusman.vercel.app/sitemap.xml
